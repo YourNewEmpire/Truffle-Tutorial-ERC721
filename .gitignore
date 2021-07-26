@@ -1,0 +1,7 @@
+node_modules
+.secret
+build/contracts/
+
+arrayOfJsons
+.apikey
+.env
