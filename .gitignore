@@ -1,7 +1,5 @@
 node_modules
-.secret
+collection-data/
 build/contracts/
-
-arrayOfJsons
-.apikey
 .env
+
