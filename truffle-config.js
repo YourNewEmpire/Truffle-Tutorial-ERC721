@@ -18,8 +18,7 @@
  *
  */
 
- const HDWalletProvider = require('@truffle/hdwallet-provider');
-const fs = require('fs');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 require('dotenv').config()
 const MNEMONIC = process.env.MNEMONIC
 const API_KEY = process.env.NODE_KEY
@@ -47,7 +46,6 @@ module.exports = {
       },
       network_id: 80001,
       confirmations: 2,
-      timeoutBlocks: 200,
       skipDryRun: true
 
     },
