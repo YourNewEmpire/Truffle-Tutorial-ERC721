@@ -8,7 +8,7 @@ const MNEMONIC = process.env.MNEMONIC
 const API_KEY = process.env.NODE_KEY
 
 const NFT_CONTRACT_ADDRESS = ""
-const OWNER_ADDRESS = "0x5f4c3843495Babe89cB3516cEbD8840024e741fa";
+const OWNER_ADDRESS = "";
 const MUMBAI = `https://rpc-mumbai.maticvigil.com/v1/${API_KEY}`
 const MATIC = `https://rpc-mainnet.maticvigil.com/v1/${API_KEY}`
 const NUM_ITEMS = 5;
@@ -22,7 +22,7 @@ async function test() {
 
       try {
             const provider = new HDWalletProvider(
-                  MNEMONIC, MATIC
+                  MNEMONIC, MUMBAI
             );
             const web3Instance = new web3(provider);
 
@@ -32,14 +32,13 @@ async function test() {
                   NFT_CONTRACT_ADDRESS,
             );
 
-            //? in this example i shall check the the URIs of each token id.
-            for (var i = 1; i < NUM_ITEMS; i++) {
+            //? Edit: Check the uri of token 1.
+   
                   await nftContract.methods
-                        .tokenURI(i).call().then((receipt) => {
+                        .tokenURI(1).call().then((receipt) => {
                               console.log(receipt)
                         }).catch(err => console.log(err))
 
-            }
       }
 
       catch (e) {
