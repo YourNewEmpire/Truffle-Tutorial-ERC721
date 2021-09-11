@@ -9,5 +9,8 @@
     "dotenv": "^10.0.0",
     "fs": "^0.0.1-security",
     "web3": "^1.5.0"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.15"
   }
 }
