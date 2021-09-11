@@ -85,9 +85,7 @@ module.exports = {
   // Note: if you migrated your contracts prior to enabling this field in your Truffle project and want
   // those previously migrated contracts available in the .db directory, you will need to run the following:
   // $ truffle migrate --reset --compile-all
-  plugins: [
-    'truffle-plugin-verify'
-  ],
+ 
   db: {
     enabled: false
   }
