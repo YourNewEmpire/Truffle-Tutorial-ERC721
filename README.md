@@ -1,6 +1,6 @@
 # Truffle-Tutorial-ERC721
 ### Repo for deploying and minting NFTs for opensea with truffle and ipfs
-### Soon I shall write a blog post on https://dev.to explaining whats going on here. 
+### Visit https://dev.to/yournewempire/deploy-nfts-with-truffle-ipfs-opensea-polygon-5581 for detailed tutorial
 ### Prerequisite programming in node.js would be beneficial.
 
 # Getting started 
